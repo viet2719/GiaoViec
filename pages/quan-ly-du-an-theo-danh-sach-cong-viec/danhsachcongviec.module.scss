@@ -1,0 +1,47 @@
+.blue {
+  background: #4c5bd4;
+}
+.green {
+  background: #76b51b;
+}
+
+.red {
+  background: #f46a6a;
+}
+
+.dsda {
+  table {
+    td:nth-child(2) {
+      span {
+        margin-right: 3px;
+        border-radius: 57px;
+        padding: 3px 7px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
+        display: inline-block;
+        align-items: center;
+        text-align: center;
+        color: #ffffff;
+      }
+      min-width: 250px;
+    }
+    td:nth-child(3) {
+      :nth-child(1) {
+        display: flex;
+        &:nth-child(1) {
+          margin-left: -8px;
+        }
+      }
+    }
+    td:nth-child(4) {
+      :nth-child(1) {
+        display: flex;
+        &:nth-child(1) {
+          margin-left: -8px;
+        }
+      }
+    }
+  }
+}

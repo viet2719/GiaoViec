@@ -1,0 +1,28 @@
+// ParentComponent.js
+import React from 'react';
+import { useDispatch } from 'react-redux';
+import { addDataSuccess } from './actions';
+
+const ParentComponent = () => {
+  const dispatch = useDispatch();
+
+  const handleAddData = (newData) => {
+    // Gọi API để thêm mới dữ liệu
+    // Sau khi thêm mới thành công, gửi action addDataSuccess với dữ liệu mới
+    // ...
+
+    // Gọi lại API từ component cha (thực hiện ở đây để minh họa)
+    fetch('https://example-api.com/data')
+      .then((response) => response.json())
+      .then((responseData) => {
+        // Gửi action addDataSuccess với dữ liệu mới
+        dispatch(addDataSuccess(responseData));
+      });
+  };
+
+  return (
+    component con Modal thêm mới ở đây nếu nó thành công thì call lại api đổ dữ lại cho cha
+  );
+};
+
+export default ParentComponent;

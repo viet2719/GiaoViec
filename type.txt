@@ -1,0 +1,6 @@
+type
+	0 đang làm
+	1 hoàn thành
+project_type
+	0 DA
+	1 CV
